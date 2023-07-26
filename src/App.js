@@ -5,33 +5,41 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
 
+
 /*
-Challenge: Pass props to the Card component and display that data
+Challenge:
 
-- img ("katie-zaferes.png")
-- rating ("5.0")
-- reviewCount (6)
-- country (Whatever you want)
-- title ("Life Lessons with Katie Zaferes")
-- price (136)
+- import the array of data from data.js
+- map over the array to create <Card /> components
+- display the array of card components under the navbar
+  (in place of the current <Card /> component)
 
+Note: We haven't styled the group of components yet, so they'll
+still be block elements, stacked vertically. We'll add styling later.
 */
 
+import data from "./data"
+
 function App() {
+
+    let cards = data.map((course) => (
+            <Card 
+              key={course.id}
+              img={course.coverImg}
+              rating={course.stats.rating}
+              reviewCount = {course.stats.reviewCount}
+              location={course.location}
+              title = {course.title}
+              price = {course.price}
+                        /> ))
   return (
     <div className="App">
 
       <Navbar />
       <Hero />
-
-      <Card 
-        img='http://localhost:3001/static/media/katie-zaferes.8c39a93af3d2de2b3c27.png'
-        rating="5.0"
-        reviewCount = {6}
-        country="USA"
-        title = "Life Lessons with Katie Zaferes"
-        price = {136}
-        />
+        <section className="cards-list">
+          {cards}
+        </section>
 
     </div>
   );
