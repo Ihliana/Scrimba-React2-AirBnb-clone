@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* --- Navbar --- */
+nav {
+    height: 70px;
+    display: flex;
+    padding: 1.25em 2.25em;
+    box-shadow: 0px 2.982px 7.456px rgba(0,0,0,0.1);
+}
+
+.nav--logo {
+    max-width: 100px;
+}
