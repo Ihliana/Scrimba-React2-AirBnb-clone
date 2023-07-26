@@ -7,6 +7,14 @@ body {
     font-family: sans-serif;
 }
 
+.gray {
+    color: #918E9B;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 /* --- Navbar --- */
 nav {
     height: 70px;
@@ -41,4 +49,26 @@ section {
 
 .hero--text {
     margin-top: 0;
+}
+
+
+/* --- Card --- */
+
+.card {
+    width: 175px;
+    font-size: 0.75rem;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 0.875em;
 }
