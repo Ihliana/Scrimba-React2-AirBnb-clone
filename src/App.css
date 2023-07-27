@@ -68,6 +68,7 @@ section {
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card--image {
@@ -97,6 +98,16 @@ section {
 
 .card--price {
     margin-top: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: #fff;
+    padding: 0.312em 0.437em;
+    border-radius: 2px;
+    font-weight: bold;
 }
 
 
