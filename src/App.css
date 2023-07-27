@@ -98,3 +98,16 @@ section {
 .card--price {
     margin-top: auto;
 }
+
+
+
+@media screen and (min-width: 768px){
+    .App {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .cards-list {
+        justify-content: space-around;
+    }
+}
