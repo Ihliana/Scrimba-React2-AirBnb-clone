@@ -12,13 +12,7 @@ function App() {
     let cards = data.map((course) => (
             <Card 
               key={course.id}
-              img={course.coverImg}
-              rating={course.stats.rating}
-              reviewCount = {course.stats.reviewCount}
-              location={course.location}
-              title = {course.title}
-              price = {course.price}
-              openSpots = {course.openSpots}
+              course = {course}
                         /> ))
                         
   return (
